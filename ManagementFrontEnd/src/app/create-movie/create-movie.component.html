@@ -1,0 +1,21 @@
+<h2>Create Movie</h2>
+<div [hidden]="submitted" style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name: </label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="movie.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="year">Year: </label>
+      <input type="text" class="form-control" id="year" required [(ngModel)]="movie.year" name="year">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-success"> Submit </button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h3> Movie submitted successfully!</h3>
+  <button class="btn btn-success" (click)="newMovie()">Add</button>
+</div>

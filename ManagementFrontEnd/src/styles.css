@@ -1,0 +1,33 @@
+
+body {
+  background-image: url("app/pop-corn.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;*/
+
+}
+
+a:link {
+  color: aqua;
+}
+
+
+a:hover{
+  color: #0c5460;
+}
+
+H1 {
+
+  text-align: left;
+   text-shadow: 2px 2px;
+ }
+
